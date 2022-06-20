@@ -1,0 +1,15 @@
+{
+  "name": "json-generator",
+  "version": "1.0.0",
+  "description": "create json instant",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "deano",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

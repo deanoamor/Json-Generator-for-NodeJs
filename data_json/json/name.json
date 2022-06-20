@@ -1,0 +1,75 @@
+{   
+    "data": 
+        [
+            {
+                "gender": "male",
+                "member" : [
+                    {
+                        "name" : "Sebastian"
+                    },
+                    {
+                        "name" : "Jack"
+                    },
+                    {
+                        "name" : "John"
+                    },
+                    {
+                        "name" : "Peter"
+                    },
+                    {
+                        "name" : "Mash"
+                    },
+                    {
+                        "name" : "Wino"
+                    },
+                    {
+                        "name" : "Mario"
+                    },
+                    {
+                        "name" : "Ninda"
+                    },
+                    {
+                        "name" : "Arsh"
+                    },
+                    {
+                        "name" : "Randolf"
+                    }
+                ]
+            },
+            {
+                "gender": "female",
+                "member" :[
+                    {
+                        "name": "Nia"
+                    },
+                    {
+                        "name": "Ani"
+                    },
+                    {
+                        "name": "Nari"
+                    },
+                    {
+                        "name": "Rachel"
+                    },
+                    {
+                        "name": "Matra"
+                    },
+                    {
+                        "name": "Jessica"
+                    },
+                    {
+                        "name": "Rana"
+                    },
+                    {
+                        "name": "Marsha"
+                    },
+                    {
+                        "name": "Luna"
+                    },
+                    {
+                        "name": "Nirla"
+                    }
+                ]
+            }
+        ]
+}
