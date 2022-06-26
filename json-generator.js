@@ -7,7 +7,7 @@ function getJson(){
     FuncGetJson = {
         name: getJn.getName('data_json/json/name.json'),
         age: Math.floor(Math.random() * 30),
-        address: 'alamat'
+        address: getJn.getAddress('data_json/json/address.json')
     }
 }
 

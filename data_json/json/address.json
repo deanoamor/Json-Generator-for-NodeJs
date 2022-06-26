@@ -1,0 +1,75 @@
+{   
+    "data": 
+        [
+            {
+                "country": "ID",
+                "road" : [
+                    {
+                        "address": "Jl. Raya Cikupa No.1"
+                    },
+                    {
+                        "address": "Jl. Manggarai No.3"
+                    },
+                    {
+                        "address": "Jl. Manggis No.4"
+                    },
+                    {
+                        "address": "Jl. Raya Cikupa No.1"
+                    },
+                    {
+                        "address": "Jl. Raya Cikupa No.5"
+                    },
+                    {
+                        "address": "Jl. Kemakmuran raya No.2"
+                    },
+                    {
+                        "address": "Jl. Kemakmuran raya No.4"
+                    },
+                    {
+                        "address": "Jl. Bagus No.1"
+                    },
+                    {
+                        "address": "Jl. ninajadulu No.4"
+                    },
+                    {
+                        "address": "Jl. Kemanggisan No.7"
+                    }
+                ]
+            },
+            {
+                "country": "ID",
+                "road" : [
+                    {
+                        "address": "Jl. Raya Cikupa No.1"
+                    },
+                    {
+                        "address": "Jl. Manggarai No.3"
+                    },
+                    {
+                        "address": "Jl. Manggis No.4"
+                    },
+                    {
+                        "address": "Jl. Raya Cikupa No.1"
+                    },
+                    {
+                        "address": "Jl. Raya Cikupa No.5"
+                    },
+                    {
+                        "address": "Jl. Kemakmuran raya No.2"
+                    },
+                    {
+                        "address": "Jl. Kemakmuran raya No.4"
+                    },
+                    {
+                        "address": "Jl. Bagus No.1"
+                    },
+                    {
+                        "address": "Jl. ninajadulu No.4"
+                    },
+                    {
+                        "address": "Jl. Kemanggisan No.7"
+                    }
+                ]
+            }
+        ]
+}
