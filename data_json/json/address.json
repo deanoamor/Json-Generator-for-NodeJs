@@ -1,75 +1,71 @@
-{   
-    "data": 
-        [
-            {
-                "country": "ID",
-                "road" : [
-                    {
-                        "address": "Jl. Raya Cikupa No.1"
-                    },
-                    {
-                        "address": "Jl. Manggarai No.3"
-                    },
-                    {
-                        "address": "Jl. Manggis No.4"
-                    },
-                    {
-                        "address": "Jl. Raya Cikupa No.1"
-                    },
-                    {
-                        "address": "Jl. Raya Cikupa No.5"
-                    },
-                    {
-                        "address": "Jl. Kemakmuran raya No.2"
-                    },
-                    {
-                        "address": "Jl. Kemakmuran raya No.4"
-                    },
-                    {
-                        "address": "Jl. Bagus No.1"
-                    },
-                    {
-                        "address": "Jl. ninajadulu No.4"
-                    },
-                    {
-                        "address": "Jl. Kemanggisan No.7"
-                    }
-                ]
-            },
-            {
-                "country": "ID",
-                "road" : [
-                    {
-                        "address": "Jl. Raya Cikupa No.1"
-                    },
-                    {
-                        "address": "Jl. Manggarai No.3"
-                    },
-                    {
-                        "address": "Jl. Manggis No.4"
-                    },
-                    {
-                        "address": "Jl. Raya Cikupa No.1"
-                    },
-                    {
-                        "address": "Jl. Raya Cikupa No.5"
-                    },
-                    {
-                        "address": "Jl. Kemakmuran raya No.2"
-                    },
-                    {
-                        "address": "Jl. Kemakmuran raya No.4"
-                    },
-                    {
-                        "address": "Jl. Bagus No.1"
-                    },
-                    {
-                        "address": "Jl. ninajadulu No.4"
-                    },
-                    {
-                        "address": "Jl. Kemanggisan No.7"
-                    }
-                ]
-            }
-        ]
+{
+    "data": [{
+            "country": "ID",
+            "road": [{
+                    "address": "Jl. Raya Cikupa No.1"
+                },
+                {
+                    "address": "Jl. Manggarai No.3"
+                },
+                {
+                    "address": "Jl. Manggis No.4"
+                },
+                {
+                    "address": "Jl. Raya Cikupa No.1"
+                },
+                {
+                    "address": "Jl. Raya Cikupa No.5"
+                },
+                {
+                    "address": "Jl. Kemakmuran raya No.2"
+                },
+                {
+                    "address": "Jl. Kemakmuran raya No.4"
+                },
+                {
+                    "address": "Jl. Bagus No.1"
+                },
+                {
+                    "address": "Jl. ninajadulu No.4"
+                },
+                {
+                    "address": "Jl. Kemanggisan No.7"
+                }
+            ]
+        },
+        {
+            "country": "US",
+            "road": [{
+                    "address": "Makava Road No.8"
+                },
+                {
+                    "address": "Burnham Road No.1"
+                },
+                {
+                    "address": "Washington Road No.2"
+                },
+                {
+                    "address": "New York Road No.3"
+                },
+                {
+                    "address": "Florida Road No.4"
+                },
+                {
+                    "address": "Flower Road No.5"
+                },
+                {
+                    "address": "Nort Road No.6"
+                },
+                {
+                    "address": "Carolina Road No.2"
+                },
+                {
+                    "address": "Hamburg Road No.4"
+                },
+                {
+                    "address": "Alaska Road No.6"
+                }
+            ]
+        }
+    ]
 }

@@ -1,16 +1,21 @@
 const fs = require('fs');
 
-function getName(url){
+function getName(nameChoose){
 
+    let resultMember;
+    
     //read from json.file
-    let data = fs.readFileSync(url, 'utf-8');
-    // let data1 = fs.readFileSync('../json/name.json', 'utf-8');
+    let data = fs.readFileSync('data_json/json/name.json', 'utf-8');
 
     //change to json fromat
     const result = JSON.parse(data);
 
-    //get member data
-    const resultMember = result.data.map(e => e.member)
+     //get member data
+    if(nameChoose){
+        resultMember = result.data.filter(e => e.gender === nameChoose).map(e => e.member);
+    }else{
+        resultMember = result.data.map(e => e.member)
+    }
 
     //get random member data
     let resultRandomMember = resultMember[Math.floor(Math.random() * resultMember.length)];
@@ -26,18 +31,23 @@ function getName(url){
 
 };
 
-function getAddress(url){
+function getAddress(addresChoose){
+
+    let resultRoad;
 
    //read from json.file
-   let data = fs.readFileSync(url, 'utf-8');
-   // let data1 = fs.readFileSync('../json/name.json', 'utf-8');
+   let data = fs.readFileSync('data_json/json/address.json', 'utf-8');
 
    //change to json fromat
    const result = JSON.parse(data);
 
    //get road data
-   const resultRoad = result.data.map(e => e.road)
-
+   if(addresChoose){
+        resultRoad = result.data.filter(e => e.country === addresChoose).map(e => e.road);
+   }else{
+        resultRoad = result.data.map(e => e.road)
+   }
+ 
    //get random road data
    let resultRandomRoad = resultRoad[Math.floor(Math.random() * resultRoad.length)];
 

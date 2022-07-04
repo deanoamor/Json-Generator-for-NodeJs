@@ -1,17 +1,35 @@
 const getJn = require('./data_json/process/get-json.js');
 const fs = require('fs');
 
-let FuncGetJson = {};
 
-function getJson(){
-    FuncGetJson = {
-        name: getJn.getName('data_json/json/name.json'),
-        age: Math.floor(Math.random() * 30),
-        address: getJn.getAddress('data_json/json/address.json')
+function getJson(fieldsRandom){
+
+    let result = fieldsRandom.split(':')[0];
+    let choose = fieldsRandom.split(':')[1];
+
+    let obj = {
+        name: function(a){
+            return getJn.getName(a);
+        },
+        age: function(a){
+            return Math.floor(Math.random() * a)
+        },
+        address: function(a){
+            return getJn.getAddress(a);
+        }
+    };
+
+    let objarray = Object.keys(obj);
+
+    for(let i = 0; i < objarray.length; i++){
+        if(objarray[i] === result){
+            return obj[result](choose);
+        }
     }
+
 }
 
-//function to create json.file
+//function to create json.file asynchronus
 function jsonCreate(file,amount , ...fields){
 
     //extract string befor (): symbol) from array field
@@ -23,36 +41,76 @@ function jsonCreate(file,amount , ...fields){
         }
     });
 
-    //extract string after (: symbol) from array field
-    let value = fields.map(e => {
-        if(e.includes(':')){
-            return e.split(':')[1];
-        }else{
-            return 'none';
-        }
-    });
-
     //create array of object
     if(file.includes('.json')){
         
-        let fieldArr = [];
+        let data = [];
+
+
+        let fieldsResult = fields.map(e => {
+            return e;
+        });
 
         //fill field json file with value
         for(let i = 0; i < amount; i++){
-            getJson();
             let fieldObj = {};
-            field.forEach( (e) => fieldObj[e] = FuncGetJson[e]);
-            fieldArr.push(fieldObj);
+            field.forEach( (e , i) => {
+                fieldObj[e] = getJson(fieldsResult[i]);
+            });
+            data.push(fieldObj);
         };
 
+        let obj = {data};
+
         //write to json file
-        fs.writeFile(file, JSON.stringify(fieldArr), (err) => {
+        fs.writeFile(file, JSON.stringify(obj), (err) => {
             if(err){
                 console.log(err);
             }else{
                 console.log('File created');
             }
         });
+    }else{
+        console.log('File name must end with .json');
+    }
+}
+
+//function to create json.file synchronus
+function jsonCreateSync(file,amount , ...fields){
+
+    //extract string befor (): symbol) from array field
+    let field = fields.map(e => {
+        if(e.includes(':')){
+            return e.split(':')[0];
+        }else{
+            return e;
+        }
+    });
+
+    //create array of object
+    if(file.includes('.json')){
+        
+        let data = [];
+
+
+        let fieldsResult = fields.map(e => {
+            return e;
+        });
+
+        //fill field json file with value
+        for(let i = 0; i < amount; i++){
+            let fieldObj = {};
+            field.forEach( (e , i) => {
+                fieldObj[e] = getJson(fieldsResult[i]);
+            });
+            data.push(fieldObj);
+        };
+
+        let obj = {data};
+
+        //write to json file
+        fs.writeFileSync(file, JSON.stringify(obj));
+        console.log('File created');
     }else{
         console.log('File name must end with .json');
     }
@@ -76,5 +134,6 @@ function jsonRead(file){
 
 module.exports = {
     jsonCreate,
+    jsonCreateSync,
     jsonRead
 }
