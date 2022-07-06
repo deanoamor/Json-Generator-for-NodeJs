@@ -7,4 +7,14 @@ A project whose purpose is to create a json.file automatically and instantly.
 1. Make sure your computer can run NodeJs.
 2. Open app.js
 3. You will see this code
-https://github.com/deanoamor/Json.file-Generator-for-NodeJs/blob/8a264c04d394002640f05cefdd1886437104bcad/app.js
+```
+
+const jsongn = require('./json-generator.js');
+
+
+console.log('start');
+// jsongn.jsonCreate('data.json' ,5, 'name:male', 'age:50' ,'address:id');
+jsongn.jsonCreateSync('data.json' ,5, 'name:male', 'age:50' ,'address:ID');
+// jsongn.jsonRead('test.json');
+console.log('end');
+```
