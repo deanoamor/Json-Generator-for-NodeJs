@@ -20,7 +20,7 @@ console.log('end');
 Explanation:
 - This code works to run the json.file generator asynchronously:
 ```
-// jsongn.jsonCreate('data.json' ,5, 'name:male', 'age:50' ,'address:id');
+jsongn.jsonCreate('data.json' ,5, 'name:male', 'age:50' ,'address:id');
 ```
 
 - This code works to run the json.file generator synchronously:
