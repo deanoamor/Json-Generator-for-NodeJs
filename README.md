@@ -4,7 +4,7 @@
 A project whose purpose is to create a json.file automatically and instantly.
 
 ## How To Use It
-1. Make sure your computer can run NodeJs.
+1. Make sure your computer can run Node.js.
 2. Open app.js
 3. You will see this code
 ```
