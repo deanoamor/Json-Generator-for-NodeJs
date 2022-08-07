@@ -1,4 +1,4 @@
-const getJn = require('./data_json/process/get-json.js');
+const getJn = require('../data_json/process/get-json.js');
 const fs = require('fs');
 
 
@@ -42,7 +42,6 @@ function jsonCreate(file,amount , ...fields){
     });
 
     //create array of object
-    if(file.includes('.json')){
         
         let data = [];
 
@@ -63,16 +62,14 @@ function jsonCreate(file,amount , ...fields){
         let obj = {data};
 
         //write to json file
-        fs.writeFile(file, JSON.stringify(obj), (err) => {
+        fs.writeFile(`${file}.json`, JSON.stringify(obj), (err) => {
             if(err){
                 console.log(err);
             }else{
                 console.log('File created');
             }
         });
-    }else{
-        console.log('File name must end with .json');
-    }
+
 }
 
 //function to create json.file synchronus
@@ -88,7 +85,6 @@ function jsonCreateSync(file,amount , ...fields){
     });
 
     //create array of object
-    if(file.includes('.json')){
         
         let data = [];
 
@@ -109,11 +105,8 @@ function jsonCreateSync(file,amount , ...fields){
         let obj = {data};
 
         //write to json file
-        fs.writeFileSync(file, JSON.stringify(obj));
+        fs.writeFileSync(`${file}.json`, JSON.stringify(obj));
         console.log('File created');
-    }else{
-        console.log('File name must end with .json');
-    }
 }
 
 //function to read json.file

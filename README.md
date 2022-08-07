@@ -33,8 +33,8 @@ jsongn.jsonCreateSync('data.json' ,5, 'name:male', 'age:50' ,'address:ID');
   - Currently there are only 3 fields available: name, age and address.
   - You can also add options according to the available fields by using `:` . 
  
-   | Field | Optional choice |
+   | Field | Choice |
    | --- | --- |
    | name | male , female or just write `name` without optional choice to use all genders |
-   | age | When you write 50, it means that the age that appears is under 50. |
+   | age | When you write 50, it means that the age that appears is under 50. Note: the age field must enter a number |
    | address | Currently there are only 2 country codes available: ID and US. |
