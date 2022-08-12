@@ -20,12 +20,12 @@ console.log('end');
 Explanation:
 - This code works to run the json.file generator asynchronously:
 ```
-jsongn.jsonCreate('data.json' ,5, 'name:male', 'age:50' ,'address:id');
+jsongn.jsonCreate('data' ,5, 'name:male', 'age:50' ,'address:id');
 ```
 
 - This code works to run the json.file generator synchronously:
 ```
-jsongn.jsonCreateSync('data.json' ,5, 'name:male', 'age:50' ,'address:ID');
+jsongn.jsonCreateSync('data' ,5, 'name:female', 'age:50' ,'address:ID');
 ```
 - The first parameter contains the name of the file to be created.
 - The second parameter contains how much data will be created.
